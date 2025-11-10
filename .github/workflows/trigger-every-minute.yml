@@ -12,3 +12,5 @@ jobs:
         run: |
           curl -X POST https://fgefubfhzrkibyglnilu.functions.supabase.co/reset-stock \
             -H "Authorization: Bearer ${{ secrets.SUPABASE_ANON_KEY }}"
+
+            # workflow refresh
