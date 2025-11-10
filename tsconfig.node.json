@@ -1,0 +1,24 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "outDir": "dist/node",
+    "target": "es2015",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "types": ["node"],
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+    "baseUrl": ".",
+    "paths": {
+    "@/*": ["src/*"]}
+    
+},
+  "include": [
+    "vite.config.ts",
+    "vitest.config.ts",
+    "cypress.config.ts",
+    "nightwatch.conf.ts",
+    "playwright.config.ts",
+    "eslint.config.ts"
+  ]
+}

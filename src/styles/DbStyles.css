@@ -1,0 +1,80 @@
+h2 {
+  margin-left: 12px;
+}
+
+h3 {
+  margin-left: 12px;
+}
+
+.add-rate-form {
+  margin-left: 12px; /* ya da padding-left */
+  margin-bottom: 30px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.add-user-form {
+  margin-left: 12px; /* ya da padding-left */
+  margin-bottom: 30px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.add-rate-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  margin: 16px 12px;
+}
+
+.add-user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  margin: 16px 12px;
+}
+
+.add-rate-form input,
+.add-rate-form button {
+  width: 100%;
+  max-width: 400px;
+}
+
+.add-user-form input,
+.add-user-form button {
+  width: 100%;
+  max-width: 400px;
+}
+
+@media (min-width: 768px) {
+.add-rate-form {
+    flex-direction: row;
+    align-items: center;
+}
+
+.add-rate-form input,
+.add-rate-form button {
+    width: auto;
+}
+}
+
+@media (min-width: 768px) {
+.add-user-form {
+    flex-direction: row;
+    align-items: center;
+}
+
+.add-user-form input,
+.add-user-form button {
+    width: auto;
+}
+}
+
+
+
+
+

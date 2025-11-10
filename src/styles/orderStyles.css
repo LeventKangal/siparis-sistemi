@@ -1,0 +1,201 @@
+/* Sidebar ve Genel Yapı */
+.sidebar {
+  height: 100vh;
+  width: 250px;
+  background: #1E2A38;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.sidebar h2,
+.supplier-selection h2,
+.order-summary h2,
+.order-summary h3 {
+  text-align: left;
+  margin-left: 0;
+  padding-left: 25px;
+  font-weight: normal; /* Kalınlığı kaldır */
+}
+
+.supplier-selection h3 {
+  text-align: left; /* Metni sola hizala */
+  padding-left: 25px;
+}
+
+
+.supplier-selection select {
+ margin-left: 30px; /* Biraz sağa kaydır */
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin: 6px 0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.nav-links li:hover {
+  text-decoration: underline;
+}
+
+/* Tablo Konumlandırma */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  line-height: 1.0;
+  justify-content: center; /* Tabloyu ortala */
+}
+
+/* Tüm satırların yüksekliğini başlık satırıyla eşitle */
+table tr {
+    height: 40px; /* Başlık satırı yüksekliğine göre ayarla */
+}
+
+
+table {
+  width: 94%;
+  border-collapse: collapse;
+  margin: 0 auto 20px;
+
+}
+
+/* İçerik Alanı */
+.content {
+  margin-left: 250px;
+  padding: 20px;
+  max-width: 1000px;
+  margin-right: auto;
+  
+}
+
+/* Tablo Hücreleri */
+th, td {
+  border: 1px solid #ddd;
+  padding: 6px 8px;
+  line-height: 1.0;	
+  text-align: left;
+}
+
+td {
+  white-space: nowrap;
+  
+}
+
+th {
+  font-weight: bold;
+}
+
+/* Dinamik Sütun Genişlikleri */
+th:nth-child(1), td:nth-child(1) { width: 200px;} /* Ürün adı */
+th:nth-child(2), td:nth-child(2) { width: 240px;} /* Tanım */
+th:nth-child(3), td:nth-child(3) { width: 100px; text-align: right;} /* Fiyat */
+th:nth-child(4), td:nth-child(4) { width: 100px; text-align: center;} /* Miktar */
+th:nth-child(5), td:nth-child(5) { width: 100px; text-align: center;} /* İşlem */
+
+/* Input ve Butonlar */
+input {
+  width: 85%;
+  padding: 5px;
+}
+
+.out-of-stock {
+  background-color: #ffdddd; /* 🔴 Hafif kırmızı ton */
+  opacity: 0.7; /* 🔹 Opaklık ekleyerek daha soluk görünmesini sağla */
+}
+
+
+
+.error-alert {
+  color: red;
+  font-weight: bold;
+  background: #ffe0e0;
+  padding: 10px;
+  border: 1px solid #ff0000;
+  margin-top: 10px;
+}
+
+.miktar-input {
+  width: 50px;
+  padding: 2px 4px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+}
+
+button {
+  margin-top: 1px;
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* Özel Buton Renkleri */
+
+button.update {
+  background: #007bff; /* Mavi */
+  color: white;
+}
+
+button.delete {
+  background: #dc3545; /* Kırmızı */
+  color: white;
+}
+
+submit-btn {
+  background: #28a745; /* Yeşil */
+  color: white;
+}
+.submit-btn:active {
+        transform: scale(0.95);
+        background: #28a745; /* Yeşil */
+        color: white;
+}
+
+.update-btn:active {
+        transform: scale(0.95);
+        background: #007bff; /* Mavi */
+        color: white;
+}
+.delete-btn:active {
+        transform: scale(0.95);
+        background: #dc3545; /* Kırmızı */
+        color: white;
+}
+
+.success-alert {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: opacity 0.5s;
+}
+.totals-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.totals {
+  text-align: right;
+  padding: 16px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}

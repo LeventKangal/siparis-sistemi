@@ -1,0 +1,7 @@
+{
+  "imports": {},
+  "supabase": {
+    "verifyJwt": false,
+    "schedule": "*/1 * * * *"
+  }
+}
