@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger Supabase Edge Function
-        run: |
-          curl -X POST https://fgefubfhzrkibyglnilu.functions.supabase.co/reset-stock \
-            -H "Authorization: Bearer ${{ secrets.SUPABASE_ANON_KEY }}"
+  run: |
+    curl -X POST https://fgefubfhzrkibyglnilu.functions.supabase.co/reset-stock \
+      -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}"
 
             # workflow refresh
