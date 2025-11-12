@@ -1,7 +1,7 @@
 name: Trigger Supabase Reset Every Minute
 on:
   schedule:
-    - cron: '*/1 * * * *'  # Her dakika
+    - cron: '*/15 * * * *'  # Her 15 dakika
 
 jobs:
   call-reset-stock:
