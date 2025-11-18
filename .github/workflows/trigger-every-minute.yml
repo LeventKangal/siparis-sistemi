@@ -1,15 +1,1 @@
-name: Trigger Supabase Reset Every Minute
-on:
-  schedule:
-    - cron: '*/10 * * * *'  # Her 10 dakika  
-
-jobs:
-  call-reset-stock:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Trigger Supabase Edge Function
-        run: |
-          curl -X POST https://fgefubfhzrkibyglnilu.functions.supabase.co/reset-stock \
-            -H "Authorization: Bearer ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}"
-
             # workflow refresh
